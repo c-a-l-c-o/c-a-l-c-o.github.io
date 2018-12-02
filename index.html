@@ -307,23 +307,23 @@
       var empty = true, chk = 0, is_gender_checked = false, is_activity_checked = false;
       
       
-      var modal = document.querySelector(".modal");
-      var trigger = document.querySelector(".calco-btn");
-      var closeButton = document.querySelector(".close-button");
+//       var modal = document.querySelector(".modal");
+//       var trigger = document.querySelector(".calco-btn");
+//       var closeButton = document.querySelector(".close-button");
 
-      function toggleModal() {
-        modal.classList.toggle("show-modal");
-      }
+//       function toggleModal() {
+//         modal.classList.toggle("show-modal");
+//       }
 
-      function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-      }
+//       function windowOnClick(event) {
+//         if (event.target === modal) {
+//             toggleModal();
+//         }
+//       }
 
-      trigger.addEventListener("click", toggleModal);
-      closeButton.addEventListener("click", toggleModal);
-      window.addEventListener("click", windowOnClick);
+//       trigger.addEventListener("click", toggleModal);
+//       closeButton.addEventListener("click", toggleModal);
+//       window.addEventListener("click", windowOnClick);
       
       $('form input').on('change', function() {
         $('form input').each(function() {
@@ -379,6 +379,7 @@
             $(".p-val").text(Math.round(fcalories*20/100));
           }
           empty = true;
+        $(".modal").addClass("show-modal");
       });
     });
   </script>
