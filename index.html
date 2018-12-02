@@ -305,8 +305,8 @@
       }
     }
 
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
+    if(trigger){trigger.addEventListener("click", toggleModal);}
+    if(closeButton){closeButton.addEventListener("click", toggleModal);}
     window.addEventListener("click", windowOnClick);
   </script>
   <!-- Optional JavaScript -->
